@@ -176,6 +176,3 @@ def plot_pitch(pitchcolour=None, linecolour=None, orientation=None, view=None):
         ax.add_artist(rec2)
         ax.add_artist(circle3)
         # plt.show()
-
-plot_pitch(pitchcolour="white", linecolour="black",
-          orientation = "vertical", view = "half")
