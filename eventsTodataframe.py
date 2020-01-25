@@ -4,19 +4,19 @@ import json
 def load_file(json_file):
     """
     Function that takes a json file and returns a list of dicts
-    :param json_file:
+    :param json_file: json_file of events data for match
     :return list of dicts:
     """
     with open(json_file) as f:
         data = json.load(f)
         f.close()
-    return data # returns list of dicts
+    return data
 
 
 def to_dataframe(data):
     """
     Function that takes a list of dicts returned from load_file and returns a clean dataframe
-    :param data:
+    :param data: list of dicts - output from load_file
     :return dataframe:
     """
 
@@ -162,4 +162,4 @@ def to_dataframe(data):
     df['height'] = height
     df['outcome'] = outcome
 
-    return df # returns dataframe
+    return df
