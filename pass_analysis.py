@@ -9,8 +9,7 @@ def get_pass_df(match_df):
     :param match_df: output from to_dataframe function from eventsTodataframe.py
     :return pass_df: dataframe containing all passes in a match that occur in regular play:
     """
-    pass_df = match_df[(match_df['type'] == 'Pass')
-             &(match_df['play_pattern'] == 'Regular Play')]
+    pass_df = match_df[(match_df['type'] == 'Pass')]
 
     return pass_df
 
