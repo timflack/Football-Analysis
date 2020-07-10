@@ -1,5 +1,5 @@
 """
-Examples using the pitch plotting fuction and xy data in football
+Examples using the pitch plotting fuction and xy data in football - inspiration and desing take from petermckeever.com
 """
 
 from plottingpitches import plot_pitch
